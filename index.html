@@ -13,7 +13,7 @@
 <body>
     <header>
         <!-- navbar  -->
-        <div class="navbar bg-base-100 py-3 px-4 md:px-24 fixed">
+        <div class="navbar bg-base-100 py-3 px-4 md:px-24 fixed z-10">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -62,9 +62,9 @@
                     </h2>
                     <div class="bg-white rounded-lg px-10 py-10">
 
-                        <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="flex flex-col md:flex-row justify-between items-center gap-5">
 
-                            <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex flex-col mt-5 md:flex-row gap-6">
                                 <buton class="btn text-black w-32 h-10 flex items-center">
                                     <img class="w-4 h-4" src="./assets/oval.png" alt="">
                                     One way
@@ -76,7 +76,7 @@
                                 </buton>
                             </div>
 
-                            <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex flex-col mt-5 md:flex-row gap-6">
                                 <buton class="btn text-[#006CE4] w-32 h-10 flex items-center">
                                     1 Traveller
                                     <img class="w-4 h-4 text-[#006CE4]" src="./assets/icons8-down-arrow-50.png" alt="">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
 
-                        <div class="flex gap-3">
+                        <div class="flex flex-col gap-3 md:grid grid-cols-2 lg:flex lg:flex-row">
                             <div class="flex items-center rounded-lg border w-[220px] h-14 px-4 py-3 my-5">
                                 <h2 class="font-semibold text-sm">DAC</h2>
                                 <div class="border-l-2 pl-2 ml-2">
@@ -136,10 +136,11 @@
     </header>
 
     <main>
-        <section class="max-w-6xl mx-auto ">
+        <!-- Featured Destinations  -->
+        <section class="lg:max-w-6xl mx-auto ">
             <h2 class="text-left font-bold text-4xl text-black mt-24 mb-14">Featured Destinations</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
                 <div class="card w-96 bg-base-100 shadow-xl">
                     <figure class="px-2 pt-2">
                         <img src="./assets/Resources//Thumbnail/Rectangle 181.png" alt="Shoes" class="rounded-xl" />
@@ -179,9 +180,10 @@
             </div>
         </section>
 
-        <section class="max-w-6xl mx-auto mt-10 ">
+        <!-- Deals and Offers  -->
+        <section class="mt-10  lg:max-w-6xl mx-auto ">
             <h2 class="text-left font-bold text-4xl text-black mt-24 mb-14">Deals and Offers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
 
                 <div class="flex items-center gap-3 w-96 shadow-xl  rounded-lg pr-5">
                     <img src="./assets/Resources/Offer/sliderUp_to_14__discount_on_Domestic_flights 2.png" alt="">
@@ -215,10 +217,11 @@
 
         </section>
 
-        <section class="max-w-6xl mx-auto mt-10 ">
+        <!-- Popular Airlines  -->
+        <section class="mt-10  lg:max-w-6xl mx-auto ">
             <h2 class="text-left font-bold text-4xl text-black mt-24 mb-14">Popular Airlines</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-12">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-12">
 
                 <!-- col-1  -->
                 <div class="flex flex-col">
@@ -376,23 +379,24 @@
 
         </section>
 
+        <!-- Testimonials  -->
         <section class=" mt-10 ">
 
             <div class="">
                 <h2 class="text-left font-bold text-4xl text-black mt-24 mb-14 max-w-6xl mx-auto">Testimonials</h2>
 
                 <div class="bg-[#006CE4] py-20 relative">
-                    <div class="flex justify-between max-w-6xl mx-auto relative">
+                    <div class="flex flex-col relative gap-5 lg:flex lg:flex-row justify-between max-w-6xl mx-auto ">
                         <img src="./assets/Resources/testimonial/Rectangle 30.png" alt="" class="mix-blend-overlay">
                         <img src="./assets/Resources/testimonial/Rectangle 33.png" alt="" class="mix-blend-overlay">
                     </div>
 
                     <div class="absolute inset-0 bg-[#006CE4] opacity-70"></div>
-                    <img class="absolute left-36 top-56" src="./assets/Arrow 2.png" alt="">
+                    <img class="absolute left-36 top-56 hidden lg:inline" src="./assets/Arrow 2.png" alt="">
 
-                    <div class="absolute  top-20 left-[280px]">
-                        <div class="card card-side bg-base-100 shadow-xl w-[800px] h-72">
-                            <figure class="h-full rounded-xl"><img class="h-full w-52 object-cover rounded-lg "
+                    <div class="absolute top-[500px]  md:left-28 md:top-[1000px] lg:left-[300px] lg:top-20">
+                        <div class="card  lg:card-side bg-base-100 shadow-xl ">
+                            <figure class="h-auto rounded-xl"><img class="h-full lg:w-52 object-cover rounded-lg "
                                     src="./assets/Resources/testimonial/Rectangle 32.png" alt="Movie" /></figure>
 
                             <div class="card-body py-16 px-20 relative">
@@ -412,13 +416,13 @@
                                         <img class="w-4 h-4" src="./assets/icons8-star-16.png" alt="">
                                     </div>
                                 </div>
-                                <img class="w-12 h-12 absolute left-[470px] top-48" src="./assets/”.png" alt="">
+                                <img class="w-12 h-12 absolute top-60 left-80 md:left-[470px] md:top-48 " src="./assets/”.png" alt="">
                             </div>
                         </div>
 
                     </div>
 
-                    <img class="absolute left-[1168px] top-56 " src="./assets/Arrow 1.png" alt="">
+                    <img class="absolute left-[1168px] top-56 hidden lg:inline " src="./assets/Arrow 1.png" alt="">
 
 
                 </div>
@@ -426,14 +430,14 @@
 
         </section>
 
-
-        <section class="max-w-6xl mx-auto mt-10 ">
+        <!-- Travel Blog  -->
+        <section class="mt-10  lg:max-w-6xl mx-auto ">
 
             <h2 class="text-left font-bold text-4xl text-black mt-24 mb-14">Travel Blog</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-12">
 
-                <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <div class="card card-compact w-96 bg-base-100 shadow-xl relative">
                     <figure class="w-full"><img class="object-cover w-full"
                             src="./assets/Resources/Thumbnail/Rectangle 18.png" alt="Shoes" /></figure>
                     <div class=" px-5 ">
@@ -455,6 +459,7 @@
                             <p class="text-[#FFB700] font-medium">Read more >></p>
                         </div>
                     </div>
+                    <img class="hidden md:hidden lg:absolute w-14 h-14 top-24 lg:inline" src="./assets/_Carousel arrow (1).png" alt="">
                 </div>
 
 
@@ -483,7 +488,7 @@
                 </div>
 
 
-                <div class="card card-compact w-96 bg-base-100 shadow-xl">
+                <div class="card card-compact w-96 bg-base-100 shadow-xl relative">
                     <figure class="w-full"><img class="object-cover w-full"
                             src="./assets/Resources/Thumbnail/Rectangle 18-2.png" alt="Shoes" /></figure>
                     <div class=" px-5 ">
@@ -505,17 +510,19 @@
                             <p class="text-[#FFB700] font-medium">Read more >></p>
                         </div>
                     </div>
+                    <img class="hidden md:hidden lg:absolute w-14 h-14 top-24 left-80 lg:inline" src="./assets/_Carousel arrow.png" alt="">
                 </div>
             </div>
 
         </section>
 
 
-        <section class="max-w-6xl mx-auto my-28 ">
-            <div class="flex justify-between items-center">
+        <!-- newsletter  -->
+        <section class=" my-28 lg:max-w-6xl mx-auto ">
+            <div class="flex flex-col gap-10 lg:flex lg:flex-row justify-between items-center">
                 <img src="./assets/Resources/News letter/Isolation_Mode.png" alt="">
 
-                <div class="w-[550px]">
+                <div class="lg:w-[550px]">
                     <h2 class="text-5xl font-bold">Subscribe to our <br>
                         Newsletter!</h2>
 
@@ -535,8 +542,8 @@
     </main>
 
     <footer class="bg-[#006CE4]">
-        <div class="max-w-6xl mx-auto py-14">
-            <div class="flex justify-between">
+        <div class="py-14 lg:max-w-6xl mx-auto ">
+            <div class="flex flex-col items-center gap-10 md:grid grid-cols-2 pl-20 lg:flex lg:flex-row justify-between">
 
                 <div class="flex flex-col text-white">
                     <h2 class="font-medium text-lg">Address</h2>
@@ -573,7 +580,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-between items-center border-t-2  border-[#c5c3c6]  mt-14  pt-5">
+            <div class="flex flex-col gap-5 items-center md:flex lg:flex-row justify-between  border-t-2  border-[#c5c3c6]  mt-14  pt-5">
                 <img src="./assets/Resources/Logo/LOGO white.png" alt="">
 
                 <p  class="font-medium text-xs text-white">© Copyright  AIRBOOK</p>
